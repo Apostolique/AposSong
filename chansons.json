@@ -1,5 +1,5 @@
 [{
-    "title": "AUJOURD'HUI S'EST LEVÉE LA LUMIÈRE",
+    "title": "Aujourd'hui s'est levée la lumière",
     "parts": [
         ["R. Aujourd'hui s'est levée la lumière,", "C'est la lumière du Seigneur,", "Elle dépassera les frontières,", "Elle habitera tous les coeurs."],
         ["1. Que la steppe exulte et fleurisse,", "Quelle éclate en cris de joie.", "Au pays de la soif", "L'eau a jailli et se répand."],
@@ -9,10 +9,10 @@
 }, {
     "title": "Au matin la pierre est roulée",
     "parts": [
-        ["1. Au matin la pierre est roulée,", "Sur la terre un jour nouveau s'est levé.", "Qui cherchez-vous parmi les morts ?", "Regardez, levez les yeux et croyez !"],
-        ["R. Christ est ressuscité !", "Alléluia, Dieu l'a glorifié.", "Christ est ressuscité !", "Alléluia, Il nous a sauvés !"],
+        ["1. Au matin la pierre est roulée,", "Sur la terre un jour nouveau s'est levé.", "Qui cherchez-vous parmi les morts ?", "Regardez, levez les yeux et croyez!"],
+        ["R. Christ est ressuscité!", "Alléluia, Dieu l'a glorifié.", "Christ est ressuscité!", "Alléluia, Il nous a sauvés!"],
         ["2. Nos yeux ont vu et reconnu", "Jésus Christ, notre Seigneur bien-aimé.", "En lui l'amour a triomphé,", "Car le Père à jamais l'a exalté."],
-        ["3. Terre et cieux exultent de joie", "L'univers chante et acclame son Roi.", "Sa mort a détruit notre mort", "Jour de joie, jour de fête ! Alléluia !"]
+        ["3. Terre et cieux exultent de joie", "L'univers chante et acclame son Roi.", "Sa mort a détruit notre mort", "Jour de joie, jour de fête! Alléluia!"]
     ]
 }, {
     "title": "Béni soit ton nom",
@@ -21,5 +21,413 @@
         ["R. Pour toutes tes bénédictions, je te louerai", "Quand les ténèbres se dresseront, je redirai :", "Béni soit le Nom du Seigneur béni soit ton Nom", "Béni soit le Nom du Seigneur béni soit ton Glorieux Nom"],
         ["2. Béni soit ton Nom, quand le soleil brille sur moi", "Et quand la vie m'emplit de joie, béni soit ton Nom", "Béni soit ton Nom sur le chemin de la souffrance", "Si pénible que soit l'offrande, béni soit ton Nom"],
         ["3. Tu donnes et tu reprends", "Tu donnes et tu reprends", "Mon coeur choisi de dire", "Oui béni soit ton Nom"]
+    ]
+}, {
+    "title": "Criez de joie, Christ est ressuscité!",
+    "parts": [
+        ["R. Criez de joie, Christ est ressuscité!", "Il est vivant comme il l'avait promis.", "Alléluia, Christ est ressuscité!", "Il nous ouvre la vie!"],
+        ["1. Au milieu de notre nuit,", "La lumière a resplendi.", "La Vie a détruit la mort,", "Christ ressuscité!"],
+        ["2. Vous les anges, louez-le,", "Exultez depuis les cieux!", "Tous les vivants louez Dieu!", "Christ ressuscité!"],
+        ["3. Louez Dieu dans sa grandeur,", "Louez Dieu notre Sauveur!", "Sans fin louez le Seigneur!", "Christ ressuscité!"],
+        ["4. Accueillez en votre coeur,", "Jésus-Christ l'Agneau vainqueur!", "Il est le Chemin, la Vie,", "Christ ressuscité!"]
+    ]
+}, {
+    "title": "Jésus-Christ est Seigneur, Alléluia!",
+    "parts": [
+        ["1. Jésus-Christ est Seigneur, alléluia.", "Jésus-Christ est vivant, ressuscité,", "Par sa mort, il a vaincu la mort,", "Alléluia."],
+        ["R. Alléluia, alléluia, alléluia. (ter)"],
+        ["2. Par son sang il nous a délivrés", "Du péché, des ténèbres et de la mort.", "Il nous a rachetés pour toujours,", "Alléluia!"],
+        ["3. Aujourd'hui nous en sommes témoins,", "Son amour est plus fort que la mort,", "Par sa croix, il nous a rachetés", "Alléluia!"],
+        ["4. Louez-le car il vient pour vous sauver,", "Exultez car voici votre Sauveur,", "Il est Dieu, il est Roi victorieux,", "Alléluia!"]
+    ]
+}, {
+    "title": "Venez, chantons notre Dieu",
+    "parts": [
+        ["R. Venez chantons notre Dieu,", "Lui le Roi des cieux,", "Il est venu pour sauver l'humanité", "Et nous donner la vie.", "Exulte pour ton Roi, Jérusalem, danse de joie."],
+        ["1. Il est venu pour nous sauver du péché,", "Exulte, Jérusalem, danse de joie.", "Oui par sa mort tous nous sommes libérés,", "Exulte, Jérusalem, danse de joie."],
+        ["2. Oui tous ensemble rejetons notre péché,", "Exulte, Jérusalem, danse de joie.", "Dans sa bonté, tous nous sommes pardonnés,", "Exulte, Jérusalem, danse de joie."],
+        ["3. Le Roi de gloire nous a donné le salut,", "Exulte, Jérusalem, danse de joie.", "Sa majesté, nous pouvons la contempler,", "Exulte, Jérusalem, danse de joie."],
+        ["4. S'il est venu ce n'est pas pour nous juger,", "Exulte, Jérusalem, danse de joie.", "Mais seulement pour que nous soyons sauvés,", "Exulte, Jérusalem, danse de joie."],
+        ["5. Si nous croyons par lui nous sommes guéris,", "Exulte, Jérusalem, danse de joie.", "Oui, nous croyons que c'est lui le Pain de vie,", "Exulte, Jérusalem, danse de joie."],
+        ["6. Dieu parmi nous, c'est Jésus Emmanuel,", "Exulte, Jérusalem, danse de joie.", "Par son Esprit il est au milieu de nous,", "Exulte, Jérusalem, danse de joie."]
+    ]
+}, {
+    "title": "Alléluia, Jésus Sauveur",
+    "parts": [
+        ["R. Alléluia! Alléluia!", "Alléluia! Alléluia! (bis)"],
+        ["1. À pleine voix, louons le Seigneur,", "Que règne en nos coeurs celui qui est la vie.", "Ouvrez les yeux, le Royaume est là;", "Jésus nous appelle."],
+        ["2. Il est venu donner sa lumière,", "Nous donner sa vie, nous révéler son coeur,", "Christ est Seigneur pour l'éternité,", "À lui la victoire!"],
+        ["3. Il nous envoie par toute la terre", "Annoncer la joie, annoncer l'Évangile.", "Proclamez-le dans tout l'univers :", "\"Dieu sauve son peuple!\""]
+    ]
+}, {
+    "title": "Élevons les mains",
+    "parts": [
+        ["R. Élevons les mains, chantons le Seigneur!", "Il est avec nous, le Roi, le Sauveur!", "Car il nous aime,", "Il nous entraîne dans la joie et la paix", "Offrons-lui notre vie!"],
+        ["1. Je lève les yeux vers les montagnes :", "D'où vient le secours ? Le secours vient du Seigneur.", "C'est lui qui a fait les cieux, la terre.", "Il ne sommeille pas, il veille, mon gardien."],
+        ["2. Quand je l'appelle dans la détresse,", "Le voici qui accourt vers moi pour me sauver!", "C'est lui qui m'a fait et qui m'entraîne", "Dans les pas de l'amour, et qui me tend la main!"],
+        ["3. Quand je crie vers lui, vers lui mon Seigneur,", "Il vient à moi, Il est ma force et mon abri!", "C'est lui qui m'a fait pour la louange.", "Il est le repos de mon coeur à tout jamais!"],
+        ["4. Les poissons des mers, les oiseaux du ciel,", "La lune et les étoiles sont dans la main de Dieu.", "C'est lui qui a fait fleurir la terre.", "Jusqu'à l'éternité, Il nous a tout donné!"],
+        ["5. Offrons-lui nos coeurs, notre louange,", "Car il prend soin de nous, nous sommes ses enfants!", "C'est lui qui nous fait miséricorde,", "N'ayons pas peur, le Seigneur nous ouvre les bras!"]
+    ]
+}, {
+    "title": "Voici celui qui vient au nom du Seigneur",
+    "parts": [
+        ["R. Voici celui qui vient au nom du Seigneur.", "Acclamons notre roi, hosanna! (bis)"],
+        ["1. Portes levez vos frontons.", "Levez-vous portes éternelles.", "Qu'il entre le roi de gloire."],
+        ["2 - Honneur et gloire à ton nom,", "Roi des rois, Seigneur des puissances.", "Jésus que ton règne vienne."],
+        ["3. Venez rameaux à la main.", "Célébrez le Dieu qui vous sauve :", "Aujourd'hui s'ouvre son règne!"],
+        ["4. Jésus, roi d'humilité,", "souviens-toi de nous dans ton règne.", "Accueille-nous dans ta gloire."]
+    ]
+}, {
+    "title": "Voici le Seigneur",
+    "parts": [
+        ["R. Voici le Seigneur,", "Il accourt vers nous,", "Il saute les montagnes,", "C'est lui le Seigneur!"],
+        ["1. Viens, Seigneur mon Dieu, mon Roi, mon Bien-Aimé,", "Entre dans ton jardin : la vigne a refleuri.", "Que mes lèvres chantent le Nom du Sauveur,", "Mon coeur brûle d'amour pour mon Dieu, mon Seigneur."],
+        ["2. Je voudrais, Jésus, accourir au festin,", "M'enivrer de ton vin, de ton lait, de ton miel.", "Je voudrais t'offrir la myrrhe et le parfum,", "Je voudrais réjouir le coeur de mon Seigneur."],
+        ["3. Venez, retournons au Seigneur notre Dieu", "Car il nous guérira, il nous consolera.", "Venez, accourons aux noces de l'Agneau.", "Voici l'Époux qui vient, c'est lui : c'est le Seigneur."]
+    ]
+}, {
+    "title": "Pousse des cris de joie",
+    "parts": [
+        ["R. Pousse des cris de joie, ô Jérusalem", "Éclate en ovations ô fille de Sion.", "Réjouis-toi, tressaille d'allégresse,", "Le Roi d'Israël ton Seigneur demeure en toi."],
+        ["1. Le Seigneur a écarté tes accusateurs,", "Rejeté loin de toi tes ennemis.", "Le Roi d'Israël demeure au milieu de toi,", "Tu n'as plus de malheur à redouter."],
+        ["2. En ce jour-là on dira à Jérusalem :", "\"Fille de Sion, ne crains pas le mal.", "Sois sans crainte et que tes mains ne défaillent pas,", "Le Seigneur héros Sauveur est en toi.\""],
+        ["3. Au milieu de toi, il exultera de joie,", "L'amour de Dieu te renouvellera.", "Il dansera pour toi avec des cris de joie,", "Comme aux jours de fête Il exultera."]
+    ]
+}, {
+    "title": "Chantez avec moi",
+    "parts": [
+        ["R. Chantez avec moi le Seigneur,", "Célébrez-le sans fin.", "Pour moi il a fait des merveilles,", "Et pour vous il fera de même."],
+        ["1. Il a posé les yeux sur moi,", "Malgré ma petitesse.", "Il m'a comblée de ses bienfaits,", "En lui mon cœur exulte."],
+        ["2. L'amour de Dieu est à jamais", "Sur tous ceux qui le craignent.", "Son Nom est Saint et glorieux,", "Il a fait des merveilles."],
+        ["3. Déployant son bras tout-puissant", "Il disperse les riches.", "Aux pauvres il donne à pleines mains,", "A tous ceux qui le cherchent."],
+        ["4. Il se souvient de son amour,", "Il élève les humbles.", "Il protège et soutient son peuple,", "Il garde sa promesse."]
+    ]
+}, {
+    "title": "Qu'exulte tout l'univers",
+    "parts": [
+        ["R. Qu'exulte tout l'univers, que soit chantée en tous lieux", "La puissance de Dieu.", "Dans une même allégresse, terre et cieux dansent de joie,", "Chantent alléluia!"],
+        ["1. Par amour des pécheurs", "La lumière est venue,", "Elle a changé les coeurs", "De tous ceux qui l'ont reconnue."],
+        ["2. Vous étiez dans la nuit,", "Maintenant jubilez", "Dieu vous donne la vie,", "Par amour il s'est incarné."],
+        ["3. Exultez, rendez gloire,", "Chantez que Dieu est bon,", "Christ est notre victoire,", "Il est notre résurrection."],
+        ["4. Que chacun reconnaisse :", "Jésus est notre Roi.", "Rejetons nos tristesses", "Pour une éternité de joie."],
+        ["5. Toi l'unique Seigneur,", "Envoie l'Esprit d'amour.", "Viens régner dans nos coeurs,", "Nous voulons hâter ton retour "]
+    ]
+}, {
+    "title": "Rendons gloire à Dieu",
+    "parts": [
+        ["R. Rendons gloire à notre Dieu!", "Lui qui fit des merveilles,", "Il est présent au milieu de nous", "Maintenant et à jamais!"],
+        ["1. Louons notre Seigneur,", "Car grande est sa puissance,", "Lui qui nous a créés,", "Nous a donné la vie."],
+        ["2. Invoquons notre Dieu,", "Demandons-lui sa grâce,", "Il est notre Sauveur,", "Notre libérateur."],
+        ["3. Oui le Seigneur nous aime,", "Il s'est livré pour nous.", "Unis en son amour,", "Nous exultons de joie."],
+        ["4. Dieu envoie son Esprit,", "Source de toute grâce,", "Il vient guider nos pas", "Et fait de nous des saints."],
+        ["5. Gloire à Dieu notre Père,", "À son Fils Jésus-Christ,", "À l'Esprit de lumière", "Pour les siècles des siècles."]
+    ]
+}, {
+    "title": "Gloire à toi, ô Dieu",
+    "parts": [
+        ["R. Gloire à toi, ô Dieu notre Père,", "Gloire à toi Jésus-Christ venu nous sauver.", "Gloire à toi, Esprit de lumière,", "Trinité Bienheureuse, honneur et gloire à toi!"],
+        ["1. Père des Cieux, Père infiniment bon,", "Tu combles tes enfants de tes dons.", "Tu nous as faits, et nous t´offrons nos coeurs,", "Nous te bénissons, nous croyons en toi Seigneur!"],
+        ["2. Jésus Sauveur, et Fils du Dieu vivant,", "Que s'élève vers toi notre chant.", "Ton cœur ouvert nous donne à contempler", "L'amour infini dont le Père nous a aimés."],
+        ["3. Esprit de Dieu, Esprit de sainteté,", "Tu nous conduis à la vérité.", "Descends sur nous éclairer nos chemins,", "Sois le maître en nous, et fais de nous des témoins."]
+    ]
+}, {
+    "title": "Honneur, puissance et gloire",
+    "parts": [
+        ["R. Honneur, puissance et gloire", "À Dieu le trois fois Saint!", "Que toute langue acclame,", "Le Roi de l´univers."],
+        ["1. Louez le Seigneur dans son temple véritable", "Louez le Seigneur dans le ciel de sa puissance,", "Louez le Seigneur dans ses œuvres de vaillance,", "Louez le Seigneur dans sa grande majesté!"],
+        ["2. Louez le Seigneur en jouant de la trompette,", "Louez le Seigneur par la harpe et la cithare,", "Louez le Seigneur par les cordes et les flûtes,", "Louez le Seigneur par la danse et le tambour!"],
+        ["3. Louez le Seigneur par le son de la cymbale,", "Louez le Seigneur par la cymbale éclatante", "Que tout ce qui vit et que tout ce qui respire", "Chante la louange de Dieu, alléluia!"]
+    ]
+}, {
+    "title": "Hosanna",
+    "parts": [
+        ["Hosanna, hosanna (bis)"],
+        ["R. Ouvrons les portes au Roi, au Dieu de Gloire", "Lançons des cris de joie", "Laissons jaillir un chant de victoire", "Hosanna, hosanna hosanna"],
+        ["1. Marchons ensemble, (tous) marchons ensemble", "L'ennemi tremble, (tous) l'ennemi tremble", "Dieu est avec nous, (tous) Dieu est avec nous", "Chassons les ténèbres."],
+        ["2. Qui pourra taire, (bis)", "Notre prière (bis)", "Dieu est avec nous (bis)", "Levons sa bannière."],
+        ["3. Dansons devant Lui, (bis)", "Remplis de sa vie (bis)", "Dieu est avec nous (bis)", "Chantons sa louange."]
+    ]
+}, {
+    "title": "Nous chantons ta gloire",
+    "parts": [
+        ["R. Nous chantons ta gloire", "Et nous te bénissons!", "En toi notre espoir,", "Seigneur, nous te louons", "Vois tous tes enfants", "Unis par ce chant", "Ensemble exaltent ton Nom!"],
+        ["1. Dieu très saint, ta main nous bénit!", "Ta lumière en nous resplendit.", "Ton chemin nous sera connu.", "Fais briller sur nous ton salut!"],
+        ["2. Que les peuples chantent leur joie.", "Les nations chérissent ta loi.", "Ils observent en tout, tes décrets,", "Dieu très bon et Prince de paix!"],
+        ["3. Sur la terre a germé le fruit,", "Don de Dieu pour nous aujourd'hui,", "Que tout homme adore ton Nom,", "Viens bénir toutes les nations!"]
+    ]
+}, {
+    "title": "Nous élevons les mains vers toi",
+    "parts": [
+        ["Nous élevons les mains vers toi (bis)", "Et nous chantons, ta gloire", "Nous élevons les mains vers toi (bis)", "Et nous chantons, ta gloire"],
+        ["À chaque instant…", "À tout moment… je bénirai… le Seigneur…", "Quoiqu'il se passe", "Quoiqu'il advienne", "Sa louange à mes lèvres"]
+    ]
+}, {
+    "title": "Pous tes merveilles",
+    "parts": [
+        ["R. Pour tes merveilles,", "Je veux chanter ton Nom", "Proclamer combien, tu es bon !", "De toi et de toi seul, Seigneur,", "Dépend mon sort,", "Ô mon roi, mon Dieu je t'adore."],
+        ["1. Quand je t'appelle dans la détresse,", "Sensible à mon cri tu t'abaisses,", "Ta droite douce et forte me redresse,", "Contre ton sein me tient sans cesse."],
+        ["2. À ta tendresse je m'abandonne,", "Car sûre est ta miséricorde.", "Qui comme toi, Seigneur sauve et pardonne?", "Pas de salut que tu n´accordes!"],
+        ["3. Je ne peux vivre qu'en ta présence,", "Que ne me soit cachée ta face!", "Ne déçois pas Seigneur mon espérance :", "À tout jamais je rendrai grâce."]
+    ]
+}, {
+    "title": "Que ma bouche chante ta louange",
+    "parts": [
+        ["1. De toi, Seigneur, nous attendons la vie,", "Que ma bouche chante ta louange.", "Tu es pour nous un rempart, un appui,", "Que ma bouche chante ta louange.", "La joie du coeur vient de toi ô Seigneur,", "Que ma bouche chante ta louange.", "Notre confiance est dans ton nom très saint!", "Que ma bouche chante ta louange."],
+        ["R. Sois loué Seigneur, pour ta grandeur,", "Sois loué pour tous tes bienfaits.", "Gloire à toi Seigneur, tu es vainqueur,", "Ton amour inonde nos coeurs.", "Que ma bouche chante ta louange."],
+        ["2. Seigneur, tu as éclairé notre nuit,", "Que ma bouche chante ta louange.", "Tu es lumière et clarté sur nos pas,", "Que ma bouche chante ta louange.", "Tu affermis nos mains pour le combat,", "Que ma bouche chante ta louange.", "Seigneur tu nous fortifies dans la foi!", "Que ma bouche chante ta louange."],
+        ["3. Tu viens sauver tes enfants égarés,", "Que ma bouche chante ta louange.", "Qui dans leur cœur espèrent en ton amour,", "Que ma bouche chante ta louange.", "Dans leur angoisse, ils ont crié vers toi,", "Que ma bouche chante ta louange.", "Seigneur tu entends le son de leur voix!", "Que ma bouche chante ta louange."],
+        ["4. Des ennemis, toi tu m'as délivré,", "Que ma bouche chante ta louange.", "De l'agresseur, tu m'as fait triompher,", "Que ma bouche chante ta louange.", "Je te rends grâce au milieu des nations,", "Que ma bouche chante ta louange.", "Seigneur, en tout temps, je fête ton Nom!", "Que ma bouche chante ta louange"]
+    ]
+}, {
+    "title": "Célébrez la douceur de son Nom",
+    "parts": [
+        ["R. Louez le Nom du Seigneur!", "Louez, serviteurs du Seigneur!", "Louez-le car il est bon!", "Célébrez la douceur de son Nom!"],
+        ["1. Venez, crions de joie, pour le Seigneur;", "Acclamons le Rocher, Dieu de notre Salut", "Approchons-nous de lui, chantons pour lui!", "Au son des instruments, jouons pour notre Roi!"],
+        ["2. Il est grand, il est bon notre Seigneur.", "Par-dessus tous les dieux, il domine les cieux", "Il est Roi tout-puissant, Dieu créateur,", "L'univers tout entier ses mains l'ont façonné."],
+        ["3. Entrez, inclinez-vous, prosternez-vous.", "Adorons le Seigneur, c'est lui qui nous a faits.", "Oui, il est notre Dieu, il nous conduit;", "En ses mains sont nos vies et nous sommes à lui!"],
+        ["4. Accueillons sa Parole, écoutons-la:", "Ne fermons pas nos coeurs, et méditons sa loi.", "Dieu de fidélité, reste avec nous!", "Affermis notre foi, nous espérons en toi!"]
+    ]
+}, {
+    "title": "Je bénirai le Seigneur",
+    "parts": [
+        ["R. Je bénirai le Seigneur en tout temps,", "Je garderai sa louange à mes lèvres,", "J'exulterai en Dieu seul, mon sauveur.", "Que les pauvres entendent ma voix et soient en fête!"],
+        ["1. Magnifiez avec moi notre Seigneur", "Et tous ensemble exaltons son saint Nom.", "Il écoute mon cri, entend ma voix,", "Il me délivre de toutes mes peurs."],
+        ["2. Qui regarde vers Lui resplendira,", "Jamais la honte ne le troublera.", "Quand le pauvre le prie, Dieu lui répond,", "De ses angoisses il vient le libérer."],
+        ["3. Il est là à l'entour, l’ange de Dieu.", "Pour nous sauver il veille auprès de nous.", "Voyez comme il est bon notre Seigneur!", "Heureux celui qui prend refuge en Lui."],
+        ["4. Adorez votre Dieu, saints du Seigneur.", "Ceux qui le craignent ne manquent de rien.", "Les puissants et les riches ont tout perdu,", "Qui cherche Dieu n’aura plus jamais faim!"]
+    ]
+}, {
+    "title": "Que vienne ton règne",
+    "parts": [
+        ["R.Que vienne ton règne,", "Que ton Nom soit sanctifié,", "Sur la terre comme au ciel,", "Que ta volonté soit faite.", "Que coule en torrents", "Ton Esprit de vérité.", "Donne-nous ton espérance,", "Ton amour, ta Sainteté."],
+        ["1. Qui pourrait nous séparer", "De ton amour immense?", "Qui pourrait nous détourner", "De ta miséricorde?"],
+        ["2. Tu habites nos louanges,", "Tu inspires nos prières,", "Nous attires en ta présence", "Pour nous tourner vers nos frères."],
+        ["Pont :", "Délivre-nous de tout mal,", "Donne la paix à ce temps!", "Libère-nous du péché,", "Toi qui fais miséricorde!", "Rassure-nous dans l´épreuve,", "Nous espérons ton Royaume!", "Tu nous promets le bonheur,", "L'Avènement de Jésus!"],
+        ["3.Tu seras notre lumière,", "Il n'y aura plus de nuit.", "Ton Nom sera sur nos lèvres,", "De larmes, il n'y aura plus."]
+    ]
+}, {
+    "title": "Comment ne pas te louer",
+    "parts": [
+        ["R. Comment ne pas te louer-er-er", "Comment ne pas te louer-er-er", "Comment ne pas te louer-er-er", "Seigneur Jésus! Comment? Comment?"],
+        ["1. Quand je regarde autour de moi", "Je vois ta gloire, Seigneur Jésus, je te bénis.", "Comment ne pas te louer-er-er,", "Seigneur Jésus! Comment? Comment?"],
+        ["2. Quand je regarde autour de moi", "Je vois mes frères, Seigneur Jésus, merci pour eux.", "Comment ne pas te louer-er-er,", "Seigneur Jésus! Comment? Comment?"]
+    ]
+}, {
+    "title": "Je suis dans la joie",
+    "parts": [
+        ["Je suis dans la joie, une joie immense!", "Je suis dans l'allégresse car mon Dieu m'a libéré!"],
+        ["Je chanterai de tout coeur", "les merveilles de Jésus, mon Seigneur!", "Il m'a ôté des ténèbres, il m'a délivré de tout péché!", "(bis)"],
+        ["Car mon Dieu est fidèle, il ne m'abandonne jamais!", "Je n'ai plus rien à craindre car mon Dieu m'a libéré!", "(bis)"]
+    ]
+}, {
+    "title": "Je t'aime Seigneur",
+    "parts": [
+        ["1. Me voici encore Seigneur pour être auprès de toi", "Je t'appelle au secours parfois au milieu de l’effroi", "Aujourd'hui je ne demande rien dans la fraîcheur du matin", "Je suis venu te dire que je t'aimais"],
+        ["R. Je t’aime Seigneur, ces mots sont bien imparfaits", "Mais je sais que tu vis dans mon coeur et dans ses profondeurs", "Je t'aime Seigneur,ton amour reste le même", "Je suis venu te dire que je t'aimais"],
+        ["2. Me voici encore Seigneur après les mauvais jours", "Ces symphonies inachevées, sur la portée des jours", "Cette fois… je ne peux garder le silence devant toi", "Je suis venu te dire que je t'aimais"],
+        ["3. Me voici encore Seigneur, après mes abandons", "Tous ces \"oui\" que je te dis, et qui finissent en \"non\"", "Cette fois je veux m'abandonner à ton silence à ta paix", "Je suis venu te dire que je t'aimais"],
+        ["4. Me voici encore Seigneur, pour goûter ta Parole", "Pour partager ton Pain de vie, et témoigner de toi", "Rempli–moi de ton Esprit d’amour, apprends–moi tes volontés.", "Je suis venu te dire que je t'aimais"],
+        ["5. Me voici encore Seigneur à la tombée du jour", "Je viens répondre à ton amour et chanter tes bienfaits", "Que ton Esprit m'éclaire et me guide aux chemins de sainteté", "Je suis venu te dire que je t'aimais"]
+    ]
+}, {
+    "title": "Tu es grand Seigneur",
+    "parts": [
+        ["R. Tu es grand Seigneur, ô Roi des nations!", "Ô Christ ressuscité sans fin nous te louons,", "À toi l'honneur et la majesté!", "Ô Christ ressuscité sans fin nous te louons,", "Nous proclamons ta fidélité!"],
+        ["1. Premier-né d´entre les morts,", "Le souverain et Roi des nations,", "Ton sang versé Agneau immolé", "Nous a lavés de tous nos péchés."],
+        ["2. Digne es-tu Jésus Sauveur,", "De recevoir le Livre de Vie.", "Tu es venu pour nous racheter,", "Petits et grands de toutes nations."],
+        ["3.Tu as fait de nous des rois,", "Pour notre Dieu un peuple de saints.", "Que soit béni le Dieu de bonté,", "Gloire à l'Agneau portant nos péchés."],
+        ["4. Plus de mort et plus de nuit,", "L´Agneau lui-même est notre clarté,", "Et de son coeur la vie a jailli,", "Source limpide et fleuve de vie."],
+        ["5. Viens Seigneur ne tarde plus,", "Viens consoler ton peuple assoiffé.", "Nous attendons le monde nouveau,", "Dieu avec nous pour l'éternité !"]
+    ]
+}, {
+    "title": "Priez! Ouvrez vos coeurs",
+    "parts": [
+        ["Priez! Ouvrez vos coeurs.", "Invoquez-moi, tant qu’il est temps.", "Priez! Revenez à moi.", "Je vous garderai dans ma paix."],
+        ["Vous qui peinez, venez approchez-vous!", "Mangez, et rassasiez-vous.", "Gratuitement, buvez l'eau de la vie,", "Pour vous, je répands l'Esprit!"],
+        ["Changez de vie, cherchez la sainteté,", "Car je me laisse trouver.", "Venez à moi, je suis riche en pardon.", "Voyez, le salut est là!"],
+        ["Car vos pensées, ne sont pas mes pensées,", "Mes voies ne sont pas vos voies.", "Mais ma Parole est féconde en vos vies,", "Voici, le Royaume est là!"]
+    ]
+}, {
+    "title": "Nous voulons voir Jésus élevé",
+    "parts": [
+        ["Nous voulons voir Jésus élevé", "Comme un étendard sur ce pays", "Pour montrer à tous la vérité", "Et le chemin vers le ciel!"],
+        ["Nous voulons voir (Jésus) (x3)", "Nous voulons Jésus élevé"],
+        ["Pas à pas allant de l'avant", "Peu à peu gagnons du terrain", "La prière est notre puissance", "Les murailles s’écroulent", "à terre, à terre, à terre"]
+    ]
+}, {
+    "title": "Jésus, Agneau de Dieu",
+    "parts": [
+        ["Jésus, Agneau de Dieu", "Digne es-tu de recevoir", "Honneur, puissance et gloire,", "La majesté, la victoire!", "Digne es-tu de recevoir", "Notre amour, notre adoration. (bis)"],
+        ["Pont :", "Amen, amen", "Honneur, puissance et gloire! (bis)"]
+    ]
+}, {
+    "title": "Jésus, mon sauveur et mon Roi",
+    "parts": [
+        ["Jésus, mon Sauveur et mon Roi", "Je m'abandonne à toi. (bis)"]
+    ]
+}, {
+    "title": "Adoramus te",
+    "parts": [
+        ["R. Adoramus te, Jésus, Fils de Dieu,", "Ô Dieu Saint nous venons t'adorer.", "Adoramus te, Jésus, Roi des rois,", "Dieu Sauveur nous venons t'adorer."],
+        ["1. Jésus, Image du Père, Splendeur éternelle,", "Jésus, Source de la Vie, tous: Adoramus te!", "Jésus, Dieu fait homme, Fils du Dieu vivant", "Jésus, Prince de la Paix, tous: Adoramus te !"],
+        ["2. Jésus, Père des pauvres, secours des malades,", "Jésus, Ami des pécheurs, Adoramus te!", "Jésus, Bon Berger, doux et humble de coeur", "Jésus, bonté infinie, Adoramus te!"],
+        ["3. Jésus, Parole vivante, patient et fidèle,", "Jésus, toi, notre chemin, Adoramus te!", "Jésus, Dieu très saint, notre Rédempteur", "Jésus, Vérité et Vie, Adoramus te!"],
+        ["4. Jésus, notre refuge, trésor de nos âmes,", "Jésus, maître de nos coeurs, Adoramus te!", "Jésus, Bon Pasteur, Agneau immolé,", "Jésus, Roi d'humilité, Adoramus te!"],
+        ["5. Jésus, roi des anges, maître des Apôtres", "Jésus, force des martyrs, Adoramus te!", "Jésus, joie des vierges, gloire de l'Église", "Jésus, Christ ressuscité, Adoramus te!"]
+    ]
+}, {
+    "title": "Adorez-le",
+    "parts": [
+        ["R. Adorez-le, bénissez-le!", "Que la louange de vos chants le glorifie!", "Adorez-le, bénissez-le!", "Que de vos coeurs jaillisse le feu de l'Esprit!"],
+        ["1. Aujourd'hui, approchez-vous de lui,", "Présentez-lui l'offrande de vos vies!"],
+        ["2. D'un seul coeur, louez votre Seigneur,", "Que son amour transforme votre vie."]
+    ]
+}, {
+    "title": "À l'Agneau de Dieu",
+    "parts": [
+        ["1. Elevé à la droite de Dieu,", "Couronné de mille couronnes,", "Tu resplendis comme un soleil radieux.", "Les êtres crient autour de ton trône:"],
+        ["R. À l'Agneau de Dieu soit la gloire,", "À l'Agneau de Dieu la victoire", "À l'Agneau de Dieu soit le règne,", "Pour tous les siècles, amen."],
+        ["2. L'Esprit Saint, et l'épouse fidèle disent:\"Viens!\"", "C'est leur coeur qui appelle;", "Viens ô Jésus, toi l'époux bien-aimé;", "Tous tes élus ne cessent de chanter:"],
+        ["3. Tous les peuples, toutes les nations,", "D'un seul coeur, avec les milliers d'anges,", "Entonneront en l'honneur de son nom,", "Ce chant de gloire, avec force et louange:"]
+    ]
+}, {
+    "title": "De ton amour infini",
+    "parts": [
+        ["1. Seigneur, pour marcher avec toi j'ai fixé mes yeux sur toi", "Je t'ai donné mon coeur et j'ai pris ma croix", "Cette croix c'est toi qui me l'a confié, elle est de couleur,", "L'ancienne j'te l'ai donné, avec toutes mes peurs", "    Par ta grâce je me suis relevée", "    Doucement ma vie a changé"],
+        ["R. Tu m'as rempli de ton amour infini", "C'est toi qui vit en moi, c'est par toi que j'avance", "Partout tu me devances et quoiqu'il m'arrive", "Tu es là pour moi, tu es là pour moi"],
+        ["2.Seigneur tu es toute ma joie car ton amour est vainqueur", "Quoiqu'il se passe, à toi toute la place", "Avec toi je veux dépasser les murs de mon passé", "Comme un guerrier qui a tout a gagner", "    Mon orgueil c'est toi mon Seigneur", "    Et rien ne peux t'égaler"],
+        ["3.Seigneur c'est toi en premier, c'est toi dans mon prochain", "Que je veux aimer sans fin, contempler servir et élever", "Seigneur me voici devant toi, petite mais dans la foi", "Prend ma vie oh mon Roi, chaque jour je te le chante", "    En toi je me suis enracinée", "    Rien ne pourra m'arrêter"]
+    ]
+}, {
+    "title": "Ô Jésus mon sauveur",
+    "parts": [
+        ["Ô Jésus, mon sauveur, Seigneur, nul n’est comme toi.", "Jour après jour, je te louerai, car ton amour est merveilleux.", "Mon abri, mon refuge, mon réconfort, mon rocher.", "Tout ce qui vit, ce que je suis, ne cesse de t’adorer."],
+        ["Chante au Seigneur, crie de joie, terre entière.", "À Dieu la gloire, la puissance et l’honneur.", "Les monts s'inclinent et les flots rugissent", "À l'écho de ton nom."],
+        ["Je vois tes oeuvres et mon coeur crie de joie.", "Je t'aimerai, je tiendrai par la foi.", "Rien ne pourrait égaler", "Tes promesses pour moi."]
+    ]
+}, {
+    "title": "Sur les ailes de l'aurore",
+    "parts": [
+        ["1. J'étais dans la nuit perdu loin de toi", "Ta lumière et ton salut ont resplendi", "Dans un nid d’amour tu m'as recueilli", "De ton lait et de ton miel tu m'as nourri"],
+        ["R. J'ai pu m'envoler si haut", "Sur les ailes de l'aurore"],
+        ["2. La nuit comme le jour, avec moi toujours", "Tes paroles m'ont consolé et m'ont guéri", "J'ai connu l'amour qui n’a pas de fin", "Celui qui croit en moi n’aura plus faim"],
+        ["Sur les ailes de l’aurore…"]
+    ]
+}, {
+    "title": "J'aime le Seigneur",
+    "parts": [
+        ["R. Le Seigneur a fait pour moi des merveilles,", "Sans fin je chanterai son amour. (bis)"],
+        ["1. J'aime le Seigneur, le jour où je l'appelle,", "Il entend ma voix, vers moi il tend l'oreille."],
+        ["2. J'invoquai son Nom du fond de mon angoisse:", "\"Viens me délivrer !\" C'est vrai, il m'a sauvé."],
+        ["3. Le Seigneur est juste, il est miséricorde.", "Il secourt les faibles, il veille sur les humbles."],
+        ["4. Paix à toi mon âme car Dieu t'a fait du bien.", "Il m'a préservé des larmes et des faux pas."],
+        ["5. Je sais qu'en présence de Dieu je me tiendrai,", "Marchant sur la terre, la terre des vivants."],
+        ["6. Que pourrai-je rendre à Dieu pour les bienfaits", "Dont il m'a comblé ? Lui seul m´a délivré."],
+        ["7. Dans l'action de grâce, j'invoquerai son Nom,", "Oui j'élèverai la coupe du salut."],
+        ["8. Devant tout le peuple, Seigneur je t'offrirai,", "Tel un sacrifice, la joie et la louange."]
+    ]
+}, {
+    "title": "Viens Esprit Saint",
+    "parts": [
+        ["R. Veni Sancte Spiritus"],
+        ["1. Viens, Esprit Saint, viens en nos coeurs", "Et envoie du haut du ciel", "Un rayon de ta lumière"],
+        ["2. Viens en nous, viens père des pauvres,", "Viens, dispensateur des dons,", "Viens, lumière de nos coeurs."],
+        ["3. Consolateur souverain,", "Hôte très doux de nos âmes,", "Adoucissante fraîcheur."],
+        ["4. Dans le labeur, le repos,", "Dans la fièvre, la fraîcheur,", "Dans les pleurs, le réconfort."],
+        ["5. Ô lumière bienheureuse,", "Viens remplir jusqu´à l'intime", "Le coeur de tous tes fidèles"],
+        ["6. Sans ta puissance divine,", "Il n'est rien en aucun homme,", "Rien qui ne soit perverti."],
+        ["7. Lave ce qui est souillé,", "Baigne ce qui est aride,", "Guéris ce qui est blessé."],
+        ["8. Assouplis ce qui est raide,", "Réchauffe ce qui est froid,", "Rends droit ce qui est faussé."],
+        ["9. À tous ceux qui ont la foi,", "Et qui en toi se confient,", "Donne tes sept dons sacrés."],
+        ["10. Donne mérite et vertu,", "Donne le salut final,", "Donne la joie éternelle."]
+    ]
+}, {
+    "title": "Gloire à toi, Esprit de feu",
+    "parts": [
+        ["R. Gloire à toi, je veux chanter pour toi,", "Esprit de feu, Seigneur", "Louange à toi, tu emplis l'univers,", "Gloire à toi, alléluia."],
+        ["1. Esprit Saint, envoie du haut du ciel", "Un rayon de ta lumière,", "Viens en moi, Seigneur, ô viens me visiter,", "Mon coeur est prêt, mon coeur est prêt."],
+        ["2. Esprit Saint, toi le don du Très-Haut", "Souverain consolateur,", "Viens guérir, ô Dieu, tout ce qui est blessé,", "Mon coeur est prêt, mon coeur est prêt."],
+        ["3. Esprit Saint, viens purifier ma vie,", "Lave ce qui est souillé.", "Rends droit mon chemin, garde-moi du péché,", "Mon coeur est prêt, mon cœur est prêt."],
+        ["4. Esprit Saint, brasier de charité,", "Viens changer mon coeur de pierre.", "Brûle-moi d´amour, toi l'Esprit d'unité,", "Mon coeur est prêt, mon coeur est prêt."],
+        ["5. Esprit Saint, viens me donner ta paix,", "Prends ma vie, embrase-moi.", "Donne-moi ta joie, sans fin je chanterai,", "Mon coeur est prêt, mon coeur est prêt."]
+    ]
+}, {
+    "title": "Ô Esprit de feu",
+    "parts": [
+        ["R. Ô Esprit de Feu,", "Toi notre Seigneur!", "Viens, sois le maître en nos coeurs,", "Viens Esprit de Dieu!"],
+        ["1. Viens, Esprit de Sainteté,", "Viens, Esprit de vérité!", "Viens, Esprit de charité,", "Viens, nous recréer!"],
+        ["2. Viens, Esprit consolateur,", "Viens, Toi qui connais nos peurs!", "Viens, apaise notre coeur,", "Toi, le Défenseur!"],
+        ["3. Viens, et brille dans la nuit,", "Viens, réchauffe et purifie!", "Viens, feu qui nous es promis,", "Transforme nos vies!"]
+    ]
+}, {
+    "title": "Viens, Esprit Saint, viens",
+    "parts": [
+        ["R. Viens, Esprit Saint, viens,", "Enflammer la terre entière!", "Viens, Esprit Saint, viens!", "Viens nous embraser!"],
+        ["1. Emplis-nous d'amour, Esprit de charité!", "Ô viens nous brûler de ton feu!"],
+        ["2. Donne-nous la foi, Dieu de fidélité.", "Ô viens nous brûler de ton feu!"],
+        ["3. Viens nous libérer, Esprit de vérité!", "Ô viens nous brûler de ton feu!"],
+        ["4. Viens nous fortifier, nous voulons proclamer:", "Jésus, le Christ ressuscité!"]
+    ]
+}, {
+    "title": "Viens descends des cieux",
+    "parts": [
+        ["R. Viens en nos coeurs, souffle de Dieu!", "Viens Esprit très Saint,", "Viens descends des Cieux!", "Nous t'adorons, souffle de Dieu!", "Viens Esprit très Saint,", "Viens descends des Cieux!"],
+        ["1. Ô Esprit, viens en nos coeurs,", "Et envoie du haut du ciel", "Un rayon de ta lumière.", "Viens, répands sur nous tes dons.", "Viens, lumière de nos cœurs.", "Viens en nous, Père des pauvres."],
+        ["2. Souverain consolateur,", "Adoucissante fraîcheur,", "Hôte très doux de nos âmes.", "Dans la peine, le repos,", "Dans les pleurs, le réconfort.", "Dans l'épreuve, notre force."],
+        ["3. Ô Lumière et Vérité,", "Viens délivre-nous du mal.", "Viens en nous, jusqu'à l'intime.", "Sans ta grâce et ta douceur,", "Sans ton oeuvre dans nos cœurs,", "Nul n'est libre de te suivre."],
+        ["4. Lave-nous de tout péché,", "Guéris ce qui est blessé,", "Viens baigner nos âmes arides.", "Fais brûler notre tiédeur,", "Rends droit ce qui est faussé.", "Assouplis ce qui est raide."],
+        ["5. Donne tes sept dons sacrés.", "À tous ceux qui ont la foi,", "Qui te prient dans la confiance.", "Donne mérite et vertu,", "Donne le salut final,", "Et la joie pour tous les siècles."]
+    ]
+}, {
+    "title": "Viens, souffle de Dieu",
+    "parts": [
+        ["1. Viens, souffle de Dieu, viens!", "Viens, hôte très doux.", "Viens, souffle de Dieu, viens!", "Sonde-nous, scrute-nous."],
+        ["R. Éclaire-nous, Esprit de Dieu,", "Que brille la vérité.", "Inonde-nous de ta clarté,", "Viens nous transformer.", "Esprit de Dieu, viens en nos coeurs!", "Esprit de Dieu, viens en nos coeurs!"],
+        ["2. Viens, souffle de Dieu, viens! Viens, Maître en nos coeurs.", "Viens, souffle de Dieu, viens! Guide-nous, conduis-nous."],
+        ["3. Viens, souffle de Dieu, viens! Viens, flamme d'amour.", "Viens, souffle de Dieu, viens! Brûle-nous de ton feu!"]
+    ]
+}, {
+    "title": "Esprit Saint en nos coeurs descends",
+    "parts": [
+        ["Esprit, Esprit Saint,", "en nos coeurs descends"]
+    ]
+}, {
+    "title": "Ensemble au cénacle",
+    "parts": [
+        ["1. Auprès de Marie, ensemble au Cénacle", "Nous levons les yeux vers le ciel.", "Seigneur fais jaillir, ta splendeur de gloire,", "Illumine nous de ton feu!"],
+        ["R. Viens, souffle de Dieu! Oh viens, Esprit du Très-Haut!", "Descends sur nous, flamme d’amour.", "Oh viens, brûle en nous toujours!"],
+        ["2. Esprit Créateur, éclaire nos âmes,", "Viens emplir nos coeurs de ta grâce.", "Donne-nous tes dons, inspire nos langues,", "Nous voulons partout témoigner!"],
+        ["3. Répands en nos coeurs, l’amour de nos frères", "Viens et fais de nous, un seul corps.", "Tu viens habiter notre humble louange", "Renouvelle-nous dans ta joie!"]
+    ]
+}, {
+    "title": "Couronnées d'étoiles",
+    "parts": [
+        ["R. Nous te saluons,", "Ô toi, Notre Dame,", "Marie Vierge Sainte que drape le soleil.", "Couronnée d'étoiles, la lune est sous tes pas,", "En toi nous est donnée", "L'aurore du salut"],
+        ["1. Marie Ève nouvelle et joie de ton Seigneur,", "Tu as donné naissance à Jésus le Sauveur.", "Par toi nous sont ouvertes les portes du jardin.", "Guide-nous en chemin, Étoile du Matin."],
+        ["2. Tu es restée fidèle, mère au pied de la croix.", "Soutiens notre espérance et garde notre foi.", "Du côté de ton Fils, tu as puisé pour nous,", "L'eau et le sang versés qui sauvent du péché."],
+        ["3. Quelle fut la joie d´Ève lorsque tu es montée,", "Plus haut que tous les anges, plus haut que les nuées.", "Et quelle est notre joie, douce Vierge Marie", "De contempler en Toi la promesse de vie."],
+        ["4. Ô Vierge immaculée, préservée du péché,", "En ton âme, en ton corps, tu entres dans les cieux.", "Emportée dans la gloire, sainte Reine des cieux,", "Tu nous accueilleras un jour auprès de Dieu."]
+    ]
+}, {
+    "title": "Consécration à Jésus par Marie",
+    "parts": [
+        ["Nous te choisissons, aujourd'hui, ô Marie,", "en présence de toute la Cour Céleste,", "pour notre Mère et notre Reine."],
+        ["Nous te livrons et consacrons,", "en toute soumission et amour,", "nos corps et nos âmes,", "nos biens intérieurs et extérieurs,", "et la valeur même", "de nos bonnes actions passées,", "présentes et futures,"],
+        ["te laissant un entier et plein droit", "de disposer de nous", "et de tout ce qui nous appartient,", "sans exception, selon ton bon plaisir,", "à la plus grande Gloire de Dieu,", "dans le temps et l'éternité.", "Amen!"]
+    ]
+}, {
+    "title": "Trading my sorrows",
+    "parts": [
+        ["1. I'm trading my sorrows, I'm trading my shame", "I'm laying them down for the joy of the Lord", "I'm trading my sickness, I'm trading my pain", "I'm laying them down, for the joy of the Lord"],
+        ["We Say", "Yes Lord yes Lord yes yes Lord!", "Yes Lord yes Lord yes yes Lord!", "Yes Lord yes Lord yes yes Lord Amen!"],
+        ["2. I'm pressed but not crushed", "Persecuted not abandoned", "Struck down but not destroyed", "I am blessed beyond the curse", "For His promise will endure", "That His joy's gonna be my strength"],
+        ["3. Though the sorrow may last for the night", "His joy comes with the morning"]
+    ]
+}, {
+    "title": "",
+    "parts": [
+        [""],
+        [""]
     ]
 }]
