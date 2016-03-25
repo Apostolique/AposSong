@@ -54,7 +54,7 @@ class TextFitter:
         return size
 
     #TODO: Split too long rows into columns.
-    def fitText(self, qp, title, textLines, widthMargin, heightMargin, width, height, showTitle, splitColumns):
+    def fitText(self, qp, title, textLines, widthMargin, heightMargin, width, height, showTitle, splitColumns, toggleCenter):
         centerX = widthMargin + self.marginWidth(widthMargin, width) / 2
         centerY = heightMargin + self.marginHeight(heightMargin, height) / 2
 
@@ -84,7 +84,10 @@ class TextFitter:
         qp.setPen(pen)
 
         textX = centerX - (textWidth / 2)
-        textY = centerY - (textHeight * len(textLines)) / 2
+        textY = heightMargin + textHeight
+
+        if (toggleCenter):
+            textY = centerY - (textHeight * len(textLines)) / 2
 
         if showTitle:
             path = QtGui.QPainterPath()
@@ -110,19 +113,19 @@ class TextFitter:
         qp.drawRect(0, 0, width, height)
 
 class ControlRoom(QtGui.QWidget):
-    def __init__(self, parent, songList, textFitter):
+    def __init__(self, parent):
         super(ControlRoom, self).__init__()
         self.parent = parent
 
-        self.textFitter = textFitter
         self.setWindowTitle("ControlRoom")
         self.widthMargin = 50
         self.heightMargin = 50
 
         self.toggleFullscreen = False;
-        self.songList = songList
-        self.selectedSong = 0
-        print (self.songList[0]["title"])
+        print ("Len: {}".format(len(self.parent.songList)))
+        print ("Len: {}".format(len(self.parent.songListIndex)))
+
+        print (self.parent.songList[0]["title"])
 
     def keyPressEvent(self, e):
         if not self.parent.searchMode and e.key() == QtCore.Qt.Key_F:
@@ -130,8 +133,6 @@ class ControlRoom(QtGui.QWidget):
             self.fullscreen(self.toggleFullscreen)
         else:
             self.parent.keyPressEvent(e)
-    def setSelectedSong(self, number):
-        self.selectedSong = number
 
     def fullscreen(self, state):
         if state:
@@ -144,11 +145,13 @@ class ControlRoom(QtGui.QWidget):
         qp.setRenderHint(QtGui.QPainter.Antialiasing)
         qp.setRenderHint(QtGui.QPainter.HighQualityAntialiasing)
 
+
+
         brush = QtGui.QBrush(QtCore.Qt.SolidPattern)
         qp.setBrush(brush)
         qp.drawRect(0, 0, self.width(), self.height())
 
-        self.textFitter.drawBackground(qp, self.width(), self.height())
+        self.parent.textFitter.drawBackground(qp, self.width(), self.height())
 
         #Draw the red corners of the control room.
         qp.setPen(QtGui.QPen(QtGui.QColor(255, 0, 0, 50), 10, QtCore.Qt.SolidLine))
@@ -158,13 +161,19 @@ class ControlRoom(QtGui.QWidget):
         qp.drawLine(self.width() - 100, self.height(), self.width(), self.height() - 100)
 
         titleList = []
-        for i, s in enumerate(self.songList):
-            if i == self.selectedSong:
-                titleList.append("-" + s["title"])
+        for i in self.parent.songListIndex:
+            if i == self.parent.getSelectedSongIndex():
+                titleList.append("-" + self.parent.songList[i]["title"])
             else:
-                titleList.append(s["title"])
+                titleList.append(self.parent.songList[i]["title"])
 
-        self.textFitter.fitText(qp, self.songList[self.selectedSong]["title"], titleList, self.widthMargin, self.heightMargin, self.width(), self.height(), True, True)
+        if len(self.parent.songListIndex) > 0:
+            self.parent.textFitter.fitText(qp, self.parent.getSelectedSong()["title"], titleList, self.widthMargin, self.heightMargin, self.width(), self.height(), True, True, False)
+        else:
+            pen = QtGui.QPen()
+            pen.setWidth(3)
+            pen.setColor(QtCore.Qt.gray)
+            qp.setPen(pen)
 
         #Write search string:
         font = QtGui.QFont('Source Code Pro Light', 24)
@@ -184,12 +193,16 @@ class AposSong(QtGui.QWidget):
         self.widthMargin = 50
         self.heightMargin = 50
 
+        self.selectedSongActive = 0
         self.selectedSong = 0
         self.selectedPart = 0
 
         self.toggleFullscreen = False
         self.showTitle = False
+        self.showSong = True
         self.searchMode = False
+        self.showPlayList = False
+        self.toggleCenter = False
 
         self.searchString = ""
 
@@ -200,6 +213,11 @@ class AposSong(QtGui.QWidget):
 
         with open('chansons.json', 'r', encoding='utf8') as fp:
             self.songList = json.load(fp)
+
+        self.songListIndex = []
+        self.songListIndex.extend(range(0, len(self.songList)))
+
+        self.songPlaylist = []
 
         #self.songList.append({"title": "Hello World!", "parts": [['Line1', 'Line2'], ['Second part line1', 'Second part line2.', 'YAY! Line3']]})
         #self.songList.append({"title": "Hello World!", "parts": [['Line1', 'Line2'], ['Second part line1', 'Second part line2.']]})
@@ -226,8 +244,7 @@ class AposSong(QtGui.QWidget):
                 print ("Escaped to default mode.")
                 self.searchMode = False
                 self.searchString = ""
-                if self.w is not None:
-                    self.w.update()
+                self.updateDialod()
             elif e.key() == QtCore.Qt.Key_Enter or e.key() == QtCore.Qt.Key_Return:
                 print ("Searching now! {}".format(self.searchString))
                 resultList = self.textSearch.normalSearchAll(self.searchString, self.songList)
@@ -236,20 +253,23 @@ class AposSong(QtGui.QWidget):
                 for i in resultList:
                     print (self.songList[i]["title"])
 
+                self.songListIndex = resultList
+                self.selectedSong = 0
+
+                self.updateDialod()
+
                 self.searchMode = False
             elif e.key() == QtCore.Qt.Key_Backspace:
                 self.searchString = self.searchString[:-1]
                 print ("Remove last")
-                if self.w is not None:
-                    self.w.update()
+                self.updateDialod()
             else:
                 try:
                     char = "%c" % (e.key())
                     print ("Key pressed: {}, was: {}".format(char, e.key()))
 
                     self.searchString += char.lower()
-                    if self.w is not None:
-                        self.w.update()
+                    self.updateDialod()
 
                 except OverflowError:
                     print ("Key pressed: error, was: {}".format(e.key()))
@@ -260,81 +280,129 @@ class AposSong(QtGui.QWidget):
                 self.fullscreen(self.toggleFullscreen)
             elif e.key() == QtCore.Qt.Key_D:
                 if self.w is None:
-                    self.w = ControlRoom(self, self.songList, self.textFitter)
+                    self.w = ControlRoom(self)
                     self.w.show()
                 else:
                     self.w.show()
             elif e.key() == QtCore.Qt.Key_Right:
                 print ("Next part")
-                self.selectedPart = (self.selectedPart + 1) % len(self.songList[self.selectedSong]["parts"])
+                self.selectedPart = (self.selectedPart + 1) % len(self.getSelectedSong()["parts"])
                 self.update()
             elif e.key() == QtCore.Qt.Key_Left:
                 print ("Previous part")
-                self.selectedPart = (self.selectedPart - 1) % len(self.songList[self.selectedSong]["parts"])
+                self.selectedPart = (self.selectedPart - 1) % len(self.getSelectedSong()["parts"])
                 self.update()
             elif e.key() == QtCore.Qt.Key_Up:
-                print ("Previous Song")
-                self.selectedPart = 0
-                self.selectedSong = (self.selectedSong - 1) % len(self.songList)
+                self.selectedSong = (self.selectedSong - 1) % len(self.songListIndex)
+                print ("Previous Song {}".format(self.selectedSong))
                 self.update()
-                if self.w is not None:
-                    self.w.setSelectedSong(self.selectedSong)
-                    self.w.update()
+                self.updateDialod()
             elif e.key() == QtCore.Qt.Key_Down:
-                print ("Next Song")
-                self.selectedPart = 0
-                self.selectedSong = (self.selectedSong + 1) % len(self.songList)
+                self.selectedSong = (self.selectedSong + 1) % len(self.songListIndex)
+                print ("Next Song {}".format(self.selectedSong))
                 self.update()
-                if self.w is not None:
-                    self.w.setSelectedSong(self.selectedSong)
-                    self.w.update()
+                self.updateDialod()
             elif e.key() == QtCore.Qt.Key_1:
-                self.selectedPart = 1 % len(self.songList[self.selectedSong]["parts"])
+                self.selectedPart = 1 % len(self.getSelectedSong()["parts"])
                 self.update()
             elif e.key() == QtCore.Qt.Key_2:
-                self.selectedPart = 2 % len(self.songList[self.selectedSong]["parts"])
+                self.selectedPart = 2 % len(self.getSelectedSong()["parts"])
                 self.update()
             elif e.key() == QtCore.Qt.Key_3:
-                self.selectedPart = 3 % len(self.songList[self.selectedSong]["parts"])
+                self.selectedPart = 3 % len(self.getSelectedSong()["parts"])
                 self.update()
             elif e.key() == QtCore.Qt.Key_4:
-                self.selectedPart = 4 % len(self.songList[self.selectedSong]["parts"])
+                self.selectedPart = 4 % len(self.getSelectedSong()["parts"])
                 self.update()
             elif e.key() == QtCore.Qt.Key_5:
-                self.selectedPart = 5 % len(self.songList[self.selectedSong]["parts"])
+                self.selectedPart = 5 % len(self.getSelectedSong()["parts"])
                 self.update()
             elif e.key() == QtCore.Qt.Key_6:
-                self.selectedPart = 6 % len(self.songList[self.selectedSong]["parts"])
+                self.selectedPart = 6 % len(self.getSelectedSong()["parts"])
                 self.update()
             elif e.key() == QtCore.Qt.Key_7:
-                self.selectedPart = 7 % len(self.songList[self.selectedSong]["parts"])
+                self.selectedPart = 7 % len(self.getSelectedSong()["parts"])
                 self.update()
             elif e.key() == QtCore.Qt.Key_8:
-                self.selectedPart = 8 % len(self.songList[self.selectedSong]["parts"])
+                self.selectedPart = 8 % len(self.getSelectedSong()["parts"])
                 self.update()
             elif e.key() == QtCore.Qt.Key_9:
-                self.selectedPart = 9 % len(self.songList[self.selectedSong]["parts"])
+                self.selectedPart = 9 % len(self.getSelectedSong()["parts"])
                 self.update()
             elif e.key() == QtCore.Qt.Key_0:
-                self.selectedPart = 0 % len(self.songList[self.selectedSong]["parts"])
+                self.selectedPart = 0 % len(self.getSelectedSong()["parts"])
                 self.update()
             elif e.key() == QtCore.Qt.Key_S:
                 self.searchMode = True
                 self.searchString = ""
                 print ("SearchMode: {}".format(self.searchMode))
-                if self.w is not None:
-                    self.w.update()
+                self.updateDialod()
+            elif e.key() == QtCore.Qt.Key_H:
+                self.showSong = not self.showSong
+                self.update()
+                print ("Toggle Show song")
+            elif e.key() == QtCore.Qt.Key_C:
+                self.toggleCenter = not self.toggleCenter
+                self.update()
+                print ("Toggle Centering")
+            elif e.key() == QtCore.Qt.Key_A:
+                print ("New active song")
+                self.setActiveSong()
+                self.selectedPart = 0
+                self.update()
+            elif e.key() == QtCore.Qt.Key_Q:
+                if self.getSelectedSongIndex() in self.songPlaylist:
+                    self.songPlaylist.remove(self.getSelectedSongIndex())
+                    print ("Removed song from playlist.")
+                    if self.showPlayList:
+                        self.updateDialod()
+                else:
+                    self.songPlaylist.append(self.getSelectedSongIndex())
+                    print ("Added song to playlist.")
+                    if self.showPlayList:
+                        self.updateDialod()
+            elif e.key() == QtCore.Qt.Key_W:
+                print ("Toggle playlist")
+                self.showPlayList = not self.showPlayList
+
+                self.selectedSong = 0
+                if self.showPlayList:
+                    self.songListIndex = self.songPlaylist
+                    self.updateDialod()
+                else:
+                    self.songListIndex = []
+                    self.songListIndex.extend(range(0, len(self.songList)))
+                    self.updateDialod()
+
             elif e.key() == QtCore.Qt.Key_T:
                 self.showTitle = not self.showTitle
                 self.update()
                 print ("Toggle Title!")
 
-    def fullscreen(self, state):
+    def getSelectedSong(self):
+        return self.songList[self.getSelectedSongIndex()]
 
+    def getSelectedSongIndex(self):
+        return self.songListIndex[self.selectedSong]
+
+    def getSelectedSongActive(self):
+        return self.songList[self.getSelectedSongIndexActive()]
+
+    def getSelectedSongIndexActive(self):
+        return self.selectedSongActive
+
+    def setActiveSong(self):
+        self.selectedSongActive = self.songListIndex[self.selectedSong]
+
+    def fullscreen(self, state):
         if state:
             self.showFullScreen()
         else:
             self.showNormal()
+
+    def updateDialod(self):
+        if self.w is not None:
+            self.w.update()
 
     def paintEvent(self, e):
         #TODO: Center the text as a whole.
@@ -350,7 +418,8 @@ class AposSong(QtGui.QWidget):
         
         self.textFitter.drawBackground(qp, self.width(), self.height())
 
-        self.textFitter.fitText(qp, self.songList[self.selectedSong]["title"], self.songList[self.selectedSong]["parts"][self.selectedPart], self.widthMargin, self.heightMargin, self.width(), self.height(), self.showTitle, False)
+        if self.showSong:
+            self.textFitter.fitText(qp, self.getSelectedSongActive()["title"], self.getSelectedSongActive()["parts"][self.selectedPart], self.widthMargin, self.heightMargin, self.width(), self.height(), self.showTitle, False, self.toggleCenter)
 
 
         qp.end()
