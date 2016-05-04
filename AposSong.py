@@ -395,7 +395,15 @@ class AposSong(QtGui.QWidget):
                 self.update()
             elif e.key() == QtCore.Qt.Key_Q:
                 if self.getSelectedSongIndex() in self.songPlaylist:
+
+                    print (self.selectedSong, self.getSelectedSongIndex(), len(self.songPlaylist))
+
+
                     self.songPlaylist.remove(self.getSelectedSongIndex())
+
+                    if self.selectedSong == len(self.songPlaylist):
+                        self.selectedSong -= 1
+
                     print ("Removed song from playlist.")
                     if self.showPlayList:
                         self.updateDialod()
