@@ -26,6 +26,13 @@ class TextSearch:
                 resultList.append(i)
         return resultList
 
+    def filterSearch(self, searchString, songList, songListIndex):
+        resultList = []
+        for i, s in enumerate(songListIndex):
+            if self.normalSearch(searchString, songList[s]):
+                resultList.append(s)
+        return resultList
+
 class TextFitter:
     def __init__(self):
         pass
@@ -54,7 +61,7 @@ class TextFitter:
         return size
 
     #TODO: Split too long rows into columns.
-    def fitText(self, qp, title, textLines, widthMargin, heightMargin, width, height, showTitle, splitColumns, toggleCenter):
+    def fitText(self, qp, title, textLines, widthMargin, heightMargin, width, height, showTitle, splitColumns, toggleCenter, columnSplit):
         centerX = widthMargin + self.marginWidth(widthMargin, width) / 2
         centerY = heightMargin + self.marginHeight(heightMargin, height) / 2
 
@@ -73,10 +80,21 @@ class TextFitter:
                 longestTextLen = len(i)
 
         textSize = self.getMaxTextSize(longestText, self.marginWidth(widthMargin, width), self.marginHeight(heightMargin, height), lineCount)
+        #textSizeFactor = 1
+        #while (True):
+        #    tempTextSize = self.getMaxTextSize(longestText, self.marginWidth(widthMargin, width) / textSizeFactor, self.marginHeight(heightMargin, height), lineCount / textSizeFactor)
+        #    if (textSize <= tempTextSize and columnSplit):
+        #        textSize = tempTextSize
+        #        textSizeFactor += 1
+        #    else:
+        #        break
+
         font = QtGui.QFont('Source Code Pro Light', textSize)
         fm = QtGui.QFontMetrics(font)
         textWidth = fm.width(longestText)
         textHeight = fm.height()
+
+        #print ("Text + column", textSize, textSizeFactor)
 
         pen = QtGui.QPen()
         pen.setWidth(3)
@@ -96,10 +114,22 @@ class TextFitter:
             qp.drawPath(path)
             textY += textHeight * 2
 
+        #textX -= textWidth
+        #topY = textY
+        #currentColumn = 0
+
         qp.setBrush(QtGui.QBrush(QtGui.QColor(255, 255, 255, 200)))
-        for i in textLines:
+        for i, tl in enumerate(textLines):
+        #    print (i, tl)
+
+        #    if (i // (lineCount // textSizeFactor) != currentColumn):
+        #        print ("Current", i // (lineCount // textSizeFactor), currentColumn, (lineCount // textSizeFactor), lineCount)
+        #        currentColumn += 1
+        #        textY = topY
+        #        textX += textWidth
+
             path = QtGui.QPainterPath()
-            path.addText(textX, textY, font, i)
+            path.addText(textX, textY, font, tl)
 
             qp.drawPath(path)
             textY += textHeight
@@ -168,7 +198,7 @@ class ControlRoom(QtGui.QWidget):
                 titleList.append(self.parent.songList[i]["title"])
 
         if len(self.parent.songListIndex) > 0:
-            self.parent.textFitter.fitText(qp, self.parent.getSelectedSong()["title"], titleList, self.widthMargin, self.heightMargin, self.width(), self.height(), True, True, False)
+            self.parent.textFitter.fitText(qp, self.parent.getSelectedSong()["title"], titleList, self.widthMargin, self.heightMargin, self.width(), self.height(), True, True, False, True)
         else:
             pen = QtGui.QPen()
             pen.setWidth(3)
@@ -201,6 +231,7 @@ class AposSong(QtGui.QWidget):
         self.showTitle = False
         self.showSong = True
         self.searchMode = False
+        self.searchModeFilter = False
         self.showPlayList = False
         self.toggleCenter = False
 
@@ -239,15 +270,21 @@ class AposSong(QtGui.QWidget):
         #    print(family)
 
     def keyPressEvent(self, e):
-        if self.searchMode:
+        if self.searchMode or self.searchModeFilter:
             if e.key() == QtCore.Qt.Key_Escape:
                 print ("Escaped to default mode.")
                 self.searchMode = False
+                self.searchModeFilter = False
                 self.searchString = ""
                 self.updateDialod()
             elif e.key() == QtCore.Qt.Key_Enter or e.key() == QtCore.Qt.Key_Return:
                 print ("Searching now! {}".format(self.searchString))
-                resultList = self.textSearch.normalSearchAll(self.searchString, self.songList)
+                resultList = []
+                if self.searchMode:
+                    resultList = self.textSearch.normalSearchAll(self.searchString, self.songList)
+                else:
+                    resultList = self.textSearch.filterSearch(self.searchString, self.songList, self.songListIndex)
+
 
                 print (resultList)
                 for i in resultList:
@@ -259,6 +296,7 @@ class AposSong(QtGui.QWidget):
                 self.updateDialod()
 
                 self.searchMode = False
+                self.searchModeFilter = False
             elif e.key() == QtCore.Qt.Key_Backspace:
                 self.searchString = self.searchString[:-1]
                 print ("Remove last")
@@ -336,6 +374,11 @@ class AposSong(QtGui.QWidget):
                 self.searchMode = True
                 self.searchString = ""
                 print ("SearchMode: {}".format(self.searchMode))
+                self.updateDialod()
+            elif e.key() == QtCore.Qt.Key_X:
+                self.searchModeFilter = True
+                self.searchString = ""
+                print ("SearchModeFilter: {}".format(self.searchModeFilter))
                 self.updateDialod()
             elif e.key() == QtCore.Qt.Key_H:
                 self.showSong = not self.showSong
@@ -419,7 +462,7 @@ class AposSong(QtGui.QWidget):
         self.textFitter.drawBackground(qp, self.width(), self.height())
 
         if self.showSong:
-            self.textFitter.fitText(qp, self.getSelectedSongActive()["title"], self.getSelectedSongActive()["parts"][self.selectedPart], self.widthMargin, self.heightMargin, self.width(), self.height(), self.showTitle, False, self.toggleCenter)
+            self.textFitter.fitText(qp, self.getSelectedSongActive()["title"], self.getSelectedSongActive()["parts"][self.selectedPart], self.widthMargin, self.heightMargin, self.width(), self.height(), self.showTitle, False, self.toggleCenter, False)
 
 
         qp.end()
