@@ -1,6 +1,8 @@
-import sys, json
-from PyQt4 import QtGui, QtCore
+import sys
+import json
 import unicodedata
+
+from PyQt5 import QtGui, QtCore, QtWidgets
 
 class TextSearch:
     #Removes accents and lowers the cases.
@@ -142,7 +144,7 @@ class TextFitter:
         qp.setBrush(brush)
         qp.drawRect(0, 0, width, height)
 
-class ControlRoom(QtGui.QWidget):
+class ControlRoom(QtWidgets.QWidget):
     def __init__(self, parent):
         super(ControlRoom, self).__init__()
         self.parent = parent
@@ -174,8 +176,6 @@ class ControlRoom(QtGui.QWidget):
         qp = QtGui.QPainter(self)
         qp.setRenderHint(QtGui.QPainter.Antialiasing)
         qp.setRenderHint(QtGui.QPainter.HighQualityAntialiasing)
-
-
 
         brush = QtGui.QBrush(QtCore.Qt.SolidPattern)
         qp.setBrush(brush)
@@ -212,11 +212,10 @@ class ControlRoom(QtGui.QWidget):
         path.addText(50, 50, font, self.parent.searchString)
         qp.drawPath(path)
 
-class AposSong(QtGui.QWidget):
-    
+class AposSong(QtWidgets.QWidget):
     def __init__(self):
         super(AposSong, self).__init__()
-        
+
         self.textFitter = TextFitter()
         self.textSearch = TextSearch()
 
@@ -258,12 +257,11 @@ class AposSong(QtGui.QWidget):
         #    json.dump(self.songList, fp)
 
         self.initUI()
-        
-    def initUI(self):      
+
+    def initUI(self):
         self.setGeometry(300, 300, 1280, 720)
         self.setWindowTitle("AposSong")
         self.show()
-
 
         #f_db = QtGui.QFontDatabase()
         #for family in f_db.families():
@@ -284,7 +282,6 @@ class AposSong(QtGui.QWidget):
                     resultList = self.textSearch.normalSearchAll(self.searchString, self.songList)
                 else:
                     resultList = self.textSearch.filterSearch(self.searchString, self.songList, self.songListIndex)
-
 
                 print (resultList)
                 for i in resultList:
@@ -340,36 +337,6 @@ class AposSong(QtGui.QWidget):
                 print ("Next Song {}".format(self.selectedSong))
                 self.update()
                 self.updateDialod()
-            elif e.key() == QtCore.Qt.Key_1:
-                self.selectedPart = 1 % len(self.getSelectedSong()["parts"])
-                self.update()
-            elif e.key() == QtCore.Qt.Key_2:
-                self.selectedPart = 2 % len(self.getSelectedSong()["parts"])
-                self.update()
-            elif e.key() == QtCore.Qt.Key_3:
-                self.selectedPart = 3 % len(self.getSelectedSong()["parts"])
-                self.update()
-            elif e.key() == QtCore.Qt.Key_4:
-                self.selectedPart = 4 % len(self.getSelectedSong()["parts"])
-                self.update()
-            elif e.key() == QtCore.Qt.Key_5:
-                self.selectedPart = 5 % len(self.getSelectedSong()["parts"])
-                self.update()
-            elif e.key() == QtCore.Qt.Key_6:
-                self.selectedPart = 6 % len(self.getSelectedSong()["parts"])
-                self.update()
-            elif e.key() == QtCore.Qt.Key_7:
-                self.selectedPart = 7 % len(self.getSelectedSong()["parts"])
-                self.update()
-            elif e.key() == QtCore.Qt.Key_8:
-                self.selectedPart = 8 % len(self.getSelectedSong()["parts"])
-                self.update()
-            elif e.key() == QtCore.Qt.Key_9:
-                self.selectedPart = 9 % len(self.getSelectedSong()["parts"])
-                self.update()
-            elif e.key() == QtCore.Qt.Key_0:
-                self.selectedPart = 0 % len(self.getSelectedSong()["parts"])
-                self.update()
             elif e.key() == QtCore.Qt.Key_S:
                 self.searchMode = True
                 self.searchString = ""
@@ -395,10 +362,7 @@ class AposSong(QtGui.QWidget):
                 self.update()
             elif e.key() == QtCore.Qt.Key_Q:
                 if self.getSelectedSongIndex() in self.songPlaylist:
-
                     print (self.selectedSong, self.getSelectedSongIndex(), len(self.songPlaylist))
-
-
                     self.songPlaylist.remove(self.getSelectedSongIndex())
 
                     if self.selectedSong == len(self.songPlaylist):
@@ -429,6 +393,11 @@ class AposSong(QtGui.QWidget):
                 self.showTitle = not self.showTitle
                 self.update()
                 print ("Toggle Title!")
+            else:
+                for key in range(QtCore.Qt.Key_0, QtCore.Qt.Key_9 + 1):
+                    if e.key() == key:
+                        self.selectedPart = (key - QtCore.Qt.Key_0) % len(self.getSelectedSong()["parts"])
+                        self.update()
 
     def getSelectedSong(self):
         return self.songList[self.getSelectedSongIndex()]
@@ -466,18 +435,16 @@ class AposSong(QtGui.QWidget):
 
         brush = QtGui.QBrush(QtCore.Qt.SolidPattern)
         qp.setBrush(brush)
-        
+
         self.textFitter.drawBackground(qp, self.width(), self.height())
 
         if self.showSong:
             self.textFitter.fitText(qp, self.getSelectedSongActive()["title"], self.getSelectedSongActive()["parts"][self.selectedPart], self.widthMargin, self.heightMargin, self.width(), self.height(), self.showTitle, False, self.toggleCenter, False)
 
-
         qp.end()
-        
+
 def main():
-    
-    app = QtGui.QApplication(sys.argv)
+    app = QtWidgets.QApplication(sys.argv)
     ex = AposSong()
     sys.exit(app.exec_())
 
