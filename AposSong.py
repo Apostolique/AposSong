@@ -394,21 +394,9 @@ class AposSong(QtWidgets.QWidget):
                 self.update()
                 print ("Toggle Title!")
             else:
-                mapping = {
-                    QtCore.Qt.Key_0 : 0,
-                    QtCore.Qt.Key_1 : 1,
-                    QtCore.Qt.Key_2 : 2,
-                    QtCore.Qt.Key_3 : 3,
-                    QtCore.Qt.Key_4 : 4,
-                    QtCore.Qt.Key_5 : 5,
-                    QtCore.Qt.Key_6 : 6,
-                    QtCore.Qt.Key_7 : 7,
-                    QtCore.Qt.Key_8 : 8,
-                    QtCore.Qt.Key_9 : 9,
-                }
-                for (key, value) in mapping.items():
+                for key in range(QtCore.Qt.Key_0, QtCore.Qt.Key_9 + 1):
                     if e.key() == key:
-                        self.selectedPart = value % len(self.getSelectedSong()["parts"])
+                        self.selectedPart = (key - QtCore.Qt.Key_0) % len(self.getSelectedSong()["parts"])
                         self.update()
 
     def getSelectedSong(self):
